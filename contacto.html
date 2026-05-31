@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | NovaTech Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div id="nav-contenido" class="contenedor">
+      <a href="index.html" id="nav-logo">NOVA<span>TECH</span></a>
+      <button id="nav-toggle">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="profesores.html">Profesores</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO -->
+  <section class="encabezado">
+    <div class="contenedor">
+      <p class="encabezado-label">Estamos para ayudarte</p>
+      <h1>Contáctanos</h1>
+      <p>¿Tienes dudas sobre nuestros cursos, horarios o proceso de inscripción? Escríbenos y te responderemos pronto.</p>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="contact-layout contenedor">
+
+    <!-- FORMULARIO -->
+    <div class="card">
+      <h2>Envíanos un mensaje</h2>
+      <p class="card-sub">Completá el formulario y te respondemos en menos de 24 horas.</p>
+      <form>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" placeholder="Ej: María González" required />
+        </div>
+        <div class="fila-dos">
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required />
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="Ej: 8888-1234" />
+          </div>
+        </div>
+        <div class="campo">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="Ej: Consulta sobre cursos" required />
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
+        </div>
+        <button type="submit" class="btn-acento">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <!-- COLUMNA LATERAL -->
+    <div class="contact-lateral">
+
+      <!-- Info de contacto -->
+      <div class="card">
+        <h2>Información de contacto</h2>
+        <ul class="info-lista">
+          <li>
+            <div class="info-icono">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <span>Av. Central 450, San José Centro,<br>San José, Costa Rica</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icono">📞</div>
+            <div>
+              <strong>Teléfono</strong>
+              <span>+506 2234-5678</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icono">✉️</div>
+            <div>
+              <strong>Correo</strong>
+              <span>info@novatechacademy.cr</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icono">🕐</div>
+            <div>
+              <strong>Horario</strong>
+              <span>Lun – Vie: 8:00 am – 6:00 pm<br>Sáb: 8:00 am – 12:00 pm</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mapa -->
+      <div class="card">
+        <h2>¿Cómo llegar?</h2>
+        <p class="card-sub">Nos encontramos en el corazón de San José.</p>
+        <div class="mapa-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15719.0!2d-84.0900!3d9.9350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e343e0c87619%3A0x827ce72c16b8e4f!2sSan%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1ses!2scr!4v1716000000000"
+            width="100%" height="200" style="border:0;"
+            allowfullscreen="" loading="lazy"
+            title="Ubicación NovaTech Academy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="contenedor footer-grid">
+      <div>
+        <p class="footer-nombre">NOVA<span>TECH</span></p>
+        <p class="footer-descripcion">Formando los profesionales tecnológicos del mañana con educación de calidad.</p>
+        <div class="footer-redes">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-nav-titulo">Páginas</p>
+        <ul class="footer-nav-lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-nav-titulo">Contacto</p>
+        <ul class="footer-nav-lista">
+          <li>Av. Central 450, San José</li>
+          <li>+506 2234-5678</li>
+          <li>info@novatechacademy.cr</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-creditos">
+      © 2026 NovaTech Academy — Práctica 1, Ambiente Web Cliente Servidor, Universidad Fidélitas
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
+</body>
+</html>
