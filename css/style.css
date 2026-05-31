@@ -45,6 +45,7 @@ body {
    ============================================= */
 
   #navbar {
+    background-color: var(--color-primario);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -273,15 +274,100 @@ body {
 #footer {
     background: linear-gradient(135deg, #0A1F44 0%, #1E4E8C 100%);
     border-top: 4px solid var(--color-acento);
-    padding: 24px 0;
+    padding: 56px 0 24px;
     margin-top: 80px;
 }
-
+ 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+ 
+.footer-nombre {
+    color: var(--color-blanco);
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+ 
+.footer-nombre span {
+    color: var(--color-celeste);
+}
+ 
+.footer-descripcion {
+    color: #c8d8f0;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+ 
+.footer-redes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+ 
+.footer-redes a {
+    color: #c8d8f0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+ 
+.footer-redes a:hover {
+    color: var(--color-celeste);
+}
+ 
+.footer-nav-titulo {
+    color: var(--color-celeste);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+ 
+.footer-nav-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+.footer-nav-lista li {
+    margin-bottom: 10px;
+    color: #c8d8f0;
+    font-size: 0.9rem;
+}
+ 
+.footer-nav-lista li a {
+    color: #c8d8f0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+ 
+.footer-nav-lista li a:hover {
+    color: var(--color-celeste);
+}
+ 
 .footer-creditos {
     color: #7a9cc0;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    margin-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
     text-align: center;
 }
+ 
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+ 
 
 /* =============================================
    UTILIDADES GENERALES
@@ -327,7 +413,8 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.container,
+.contenedor {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
