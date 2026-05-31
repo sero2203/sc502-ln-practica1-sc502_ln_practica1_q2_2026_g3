@@ -39,10 +39,7 @@ body {
     font-size: 16px;
 }
 
-/* =============================================
-   NAVBAR - hecho en CSS puro
-   ============================================= */
-
+/* NAVBAR */
 #navbar {
     background-color: var(--color-primario);
     padding: 16px 0;
@@ -100,7 +97,7 @@ body {
     background-color: rgba(86, 204, 242, 0.15);
 }
 
-/* Botón hamburguesa - solo visible en móvil */
+/* Botón solo visible en móvil */
 #nav-toggle {
     display: none;
     background: none;
@@ -130,9 +127,7 @@ body {
     }
 }
 
-/* =============================================
-   FOOTER - hecho en CSS puro
-   ============================================= */
+/*FOOTER */
 
 #footer {
     background: linear-gradient(135deg, #0A1F44 0%, #1E4E8C 100%);
@@ -216,9 +211,7 @@ body {
     text-align: center;
 }
 
-/* =============================================
-   UTILIDADES GENERALES
-   ============================================= */
+/* UTILIDADES GENERALES*/
 
 .btn-acento {
     background-color: var(--color-acento);
