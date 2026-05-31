@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesores - NovaTech Academy</title>
+
+    <!-- Bootstrap CSS - solo para el grid -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/profesores.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+        <nav id="navbar">
+            <div class="contenedor">
+                <div id="nav-contenido">
+                    <a id="nav-logo" href="index.html">NOVA<span>TECH</span></a>
+                    <button id="nav-toggle" onclick="toggleMenu()">&#9776;</button>
+                    <ul id="nav-links">
+                        <li><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="cursos.html">Cursos</a></li>
+                        <li><a class="nav-link activo" href="profesores.html">Profesores</a></li>
+                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <main>
+
+        <!-- ENCABEZADO -->
+        <section id="encabezado-profesores">
+            <div class="container">
+                <span class="tag">Equipo Docente</span>
+                <h1>Aprende de los<br>mejores profesionales</h1>
+                <p>Nuestros profesores son expertos activos en la industria tecnológica, con experiencia real en empresas líderes del sector.</p>
+            </div>
+        </section>
+
+        <!-- TARJETAS DE PROFESORES -->
+        <section id="profesores">
+            <div class="container">
+                <h2 class="seccion-titulo">Nuestro equipo</h2>
+                <p class="seccion-subtitulo">Profesionales con experiencia en la industria tecnológica</p>
+
+                <div class="row g-4">
+
+                    <!-- Profesor 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-profesor">
+                            <img src="./images/profesor1.jpg" alt="Foto de Carlos Méndez">
+                            <h3>Carlos Méndez</h3>
+                            <p class="especialidad">Desarrollo Web</p>
+                            <p class="descripcion">Ingeniero en sistemas con 10 años de experiencia en desarrollo fullstack. Especialista en React, Node.js y arquitecturas modernas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profesor 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-profesor">
+                            <img src="./images/profesor2.jpg" alt="Foto de Laura Solís">
+                            <h3>Laura Solís</h3>
+                            <p class="especialidad">Bases de Datos</p>
+                            <p class="descripcion">Experta en diseño y administración de bases de datos relacionales y no relacionales. Certificada en MySQL, PostgreSQL y MongoDB.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profesor 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-profesor">
+                            <img src="./images/profesor3.jpg" alt="Foto de Diego Ramírez">
+                            <h3>Diego Ramírez</h3>
+                            <p class="especialidad">Ciberseguridad</p>
+                            <p class="descripcion">Especialista en seguridad informática y ethical hacking. Ha trabajado con empresas del sector financiero protegiendo infraestructuras críticas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profesor 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-profesor">
+                            <img src="./images/profesor4.jpg" alt="Foto de Ana Torres">
+                            <h3>Ana Torres</h3>
+                            <p class="especialidad">Inteligencia Artificial</p>
+                            <p class="descripcion">Investigadora y docente en machine learning y redes neuronales. Doctora en Ciencias de la Computación por la Universidad de Costa Rica.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MISIÓN Y VISIÓN -->
+        <section id="mision-vision">
+            <div class="container">
+                <h2 class="seccion-titulo">Misión & Visión</h2>
+                <p class="seccion-subtitulo">Los valores que guían nuestra academia</p>
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6">
+                        <div class="card-mv mision">
+                            <span class="mv-tag">Misión</span>
+                            <h2>Lo que nos mueve</h2>
+                            <p>Formar profesionales en tecnología con las habilidades técnicas y el pensamiento crítico necesarios para enfrentar los desafíos del mundo digital. Brindamos educación accesible, práctica y actualizada, impulsando el crecimiento personal y profesional de cada estudiante.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card-mv vision">
+                            <span class="mv-tag">Visión</span>
+                            <h2>A dónde vamos</h2>
+                            <p>Ser la academia de tecnología más innovadora de Centroamérica, reconocida por la calidad de sus egresados y su impacto en el ecosistema tecnológico regional. Aspiramos a ser el puente entre el talento local y las oportunidades globales de la industria tech.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+<footer id="footer">
+    <div class="container footer-grid">
+        <div>
+            <p class="footer-nombre">Nova<span>Tech</span></p>
+            <p class="footer-descripcion">Formando los profesionales tecnológicos del mañana con educación de calidad.</p>
+            <div class="footer-redes">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-nav-titulo">Páginas</p>
+            <ul class="footer-nav-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="profesores.html">Profesores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-nav-titulo">Contacto</p>
+            <ul class="footer-nav-lista">
+                <li>Av. Central 450, San José</li>
+                <li>+506 2234-5678</li>
+                <li>info@novatechacademy.cr</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-creditos">
+            &copy; 2026 NovaTech Academy — Práctica 1, Ambiente Web Cliente Servidor, Universidad Fidélitas
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function toggleMenu() {
+            var links = document.getElementById('nav-links');
+            if (links.style.display === 'flex') {
+                links.style.display = 'none';
+            } else {
+                links.style.display = 'flex';
+            }
+        }
+    </script>
+
+</body>
+</html>
