@@ -267,9 +267,7 @@ body {
         color: var(--color-celeste);
     }
 }
-/* =============================================
-   FOOTER
-   ============================================= */
+/* FOOTER*/
 
 #footer {
     background: linear-gradient(135deg, #0A1F44 0%, #1E4E8C 100%);
