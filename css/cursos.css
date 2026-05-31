@@ -1,0 +1,192 @@
+/* Cursos - NovaTech Academy */
+/* Encabezado */
+.encabezado {
+    background-color: #0A1F44;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.encabezado h1 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.encabezado .encabezado-label {
+    color: #56CCF2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descripcion-corta {
+    color: #F5F7FA;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+/* Layout */
+.principal-cursos {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/* Buscador */
+.buscador-card {
+    background-color: #FFFFFF;
+    border: 1px solid #1E4E8C;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.buscador-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.buscador-form label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    color: #0A1F44; 
+}
+
+.buscador-input-grupo {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.buscador-input-grupo input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #1E4E8C;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    color: #4F4F4F;
+}
+
+.buscador-input-grupo .btn-acento {
+    padding: 8px 20px;
+    background-color: #2F80ED;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.buscador-input-grupo .btn-acento:hover {
+    background-color: #0A1F44;
+}
+
+/* Categorias */
+.titulo-categoria {
+    color: #0A1F44;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-bottom: 1px solid #1E4E8C;
+    padding-bottom: 10px;
+}
+
+/* Grid */
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Tarjeta */
+.curso-card {
+    background-color: #FFFFFF;
+    border: 1px solid #1E4E8C;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+}
+
+.curso-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #1E4E8C;
+}
+
+.badge-categoria {
+    display: inline-block;
+    background-color: #F5F7FA;
+    color: #2F80ED;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 15px 20px 5px 20px;
+    align-self: flex-start;
+}
+
+.curso-card h3 {
+    color: #0A1F44;
+    font-size: 1.1rem;
+    margin: 5px 20px 10px 20px;
+}
+
+.curso-card .card-sub {
+    color: #4F4F4F;
+    font-size: 0.9rem;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Info lista */
+.curso-card .info-lista {
+    list-style: none;
+    padding: 0 20px;
+    margin: auto 0 20px 0; 
+}
+
+.curso-card .info-lista li {
+    padding: 8px 0;
+    border-bottom: 1px solid #F5F7FA;
+    font-size: 0.9rem;
+    color: #4F4F4F;
+}
+
+/* Boton */
+.block-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #2F80ED;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px 20px 20px;
+}
+
+.block-btn:hover {
+    background-color: #0A1F44;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cursos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .buscador-input-grupo {
+        flex-direction: column;
+    }
+}

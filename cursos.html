@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos | NovaTech Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cursos.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div id="nav-contenido" class="contenedor">
+      <a href="index.html" id="nav-logo">NOVA<span>TECH</span></a>
+      <button id="nav-toggle">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cursos.html" class="activo">Cursos</a></li>
+        <li><a href="profesores.html">Profesores</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="encabezado">
+    <div class="contenedor">
+      <p class="encabezado-label">Potencia tu perfil profesional</p>
+      <h1>Cursos</h1>
+      <p class="descripcion-corta">Explora nuestros cursos de tecnología diseñados para ayudarte a desarrollar habilidades prácticas y conocimientos actualizados. Aprende sobre programación, desarrollo web, bases de datos, ciberseguridad y muchas otras áreas mediante contenido dinámico, accesible y orientado al mundo real.</p>
+    </div>
+  </section>
+
+  <main class="contenedor principal-cursos">
+
+    <div class="card buscador-card">
+      <form class="buscador-form">
+        <label for="buscar">¿Qué quieres aprender hoy?</label>
+        <div class="buscador-input-grupo">
+          <input type="text" id="buscar" placeholder="Ej: Páginas Web, Java..." required />
+          <button type="submit" class="btn-acento">Buscar curso</button>
+        </div>
+      </form>
+    </div>
+
+    <h2 class="titulo-categoria">Programación y Páginas Web</h2>
+    <div class="cursos-grid">
+      
+      <div class="card curso-card">
+        <img src="images/paginas-web.jpg" alt="Páginas Web" class="curso-img">
+        <span class="badge-categoria">Programación</span>
+        <h3>Páginas Web</h3>
+        <p class="card-sub">Aprende a diseñar y estructurar sitios web modernos y atractivos utilizando las herramientas esenciales del mercado.</p>
+        <ul class="info-lista">
+          <li><strong>Duración:</strong> 12 Semanas</li>
+          <li><strong>Precio:</strong> ₡120,000 / mes</li>
+        </ul>
+        <a href="#" class="btn-acento block-btn">Ver más</a>
+      </div>
+
+      <div class="card curso-card">
+        <img src="images/programacion-java.jpg" alt="Curso de Java" class="curso-img">
+        <span class="badge-categoria">Programación</span>
+        <h3>Curso de Java</h3>
+        <p class="card-sub">Descubre las bases de la programación con uno de los lenguajes más utilizados por las empresas de software.</p>
+        <ul class="info-lista">
+          <li><strong>Duración:</strong> 8 Semanas</li>
+          <li><strong>Precio:</strong> ₡95,000 / mes</li>
+        </ul>
+        <a href="#" class="btn-acento block-btn">Ver más</a>
+      </div>
+
+      <div class="card curso-card">
+        <img src="images/contenedores.jpg" alt="Contenedores" class="curso-img">
+        <span class="badge-categoria">Programación</span>
+        <h3>Contenedores</h3>
+        <p class="card-sub">Aprende a organizar, empaquetar y subir tus aplicaciones de forma segura y rápida en la nube.</p>
+        <ul class="info-lista">
+          <li><strong>Duración:</strong> 5 Semanas</li>
+          <li><strong>Precio:</strong> ₡75,000 / mes</li>
+        </ul>
+        <a href="#" class="btn-acento block-btn">Ver más</a>
+      </div>
+
+    </div>
+
+    <h2 class="titulo-categoria">Manejo de Datos y Seguridad</h2>
+    <div class="cursos-grid">
+      
+      <div class="card curso-card">
+        <img src="images/bases de datos.jpeg" alt="Bases de Datos" class="curso-img">
+        <span class="badge-categoria">Datos</span>
+        <h3>Bases de Datos</h3>
+        <p class="card-sub">Aprende a guardar, ordenar y consultar grandes volúmenes de información empresarial de forma ordenada y ágil.</p>
+        <ul class="info-lista">
+          <li><strong>Duración:</strong> 6 Semanas</li>
+          <li><strong>Precio:</strong> ₡85,000 / mes</li>
+        </ul>
+        <a href="#" class="btn-acento block-btn">Ver más</a>
+      </div>
+
+      <div class="card curso-card">
+        <img src="images/ia.jpg" alt="Inteligencia Artificial" class="curso-img">
+        <span class="badge-categoria">Datos</span>
+        <h3>Inteligencia Artificial</h3>
+        <p class="card-sub">Entiende cómo funcionan los sistemas inteligentes y cómo utilizarlos para automatizar tareas y analizar datos.</p>
+        <ul class="info-lista">
+          <li><strong>Duración:</strong> 10 Semanas</li>
+          <li><strong>Precio:</strong> ₡140,000 / mes</li>
+        </ul>
+        <a href="#" class="btn-acento block-btn">Ver más</a>
+      </div>
+
+      <div class="card curso-card">
+        <img src="images/ciber.jpg" alt="Ciberseguridad" class="curso-img">
+        <span class="badge-categoria">Seguridad</span>
+        <h3>Ciberseguridad</h3>
+        <p class="card-sub">Aprende las técnicas clave para proteger computadoras, redes y sitios web contra ataques de hackeo.</p>
+        <ul class="info-lista">
+          <li><strong>Duración:</strong> 9 Semanas</li>
+          <li><strong>Precio:</strong> ₡110,000 / mes</li>
+        </ul>
+        <a href="#" class="btn-acento block-btn">Ver más</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer id="footer">
+    <div class="contenedor footer-grid">
+      <div>
+        <p class="footer-nombre">NOVA<span>TECH</span></p>
+        <p class="footer-descripcion">Formando los profesionales tecnológicos del mañana con educación de calidad.</p>
+        <div class="footer-redes">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-nav-titulo">Páginas</p>
+        <ul class="footer-nav-lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-nav-titulo">Contacto</p>
+        <ul class="footer-nav-lista">
+          <li>Av. Central 450, San José</li>
+          <li>+506 2234-5678</li>
+          <li>info@novatechacademy.cr</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-creditos">
+      © 2026 NovaTech Academy — Práctica 1, Ambiente Web Cliente Servidor, Universidad Fidélitas
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
+</body>
+</html>
