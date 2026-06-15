@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav id="navbar">
     <div id="nav-contenido" class="contenedor">
       <a href="index.html" id="nav-logo">NOVA<span>TECH</span></a>
@@ -23,110 +22,76 @@
     </div>
   </nav>
 
-  <!-- ENCABEZADO -->
   <section class="encabezado">
-    <div class="contenedor">
-      <p class="encabezado-label">Estamos para ayudarte</p>
-      <h1>Contáctanos</h1>
-      <p>¿Tienes dudas sobre nuestros cursos, horarios o proceso de inscripción? Escríbenos y te responderemos pronto.</p>
-    </div>
+    <h1>Contáctanos</h1>
+    <p>¿Tienes dudas sobre nuestros cursos? Escríbenos y te respondemos pronto.</p>
   </section>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <div class="contact-layout contenedor">
-
-    <!-- FORMULARIO -->
+  <div class="contact-layout">
     <div class="card">
       <h2>Envíanos un mensaje</h2>
-      <p class="card-sub">Completá el formulario y te respondemos en menos de 24 horas.</p>
-      <form>
+      <form id="form-contacto">
         <div class="campo">
           <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" placeholder="Ej: María González" required />
+          <input type="text" id="nombre" placeholder="Ej: María González" />
+          <small class="error" id="error-nombre"></small>
         </div>
-        <div class="fila-dos">
-          <div class="campo">
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required />
-          </div>
-          <div class="campo">
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" placeholder="Ej: 8888-1234" />
-          </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" />
+          <small class="error" id="error-correo"></small>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" placeholder="Ej: 8888-1234" />
+          <small class="error" id="error-telefono"></small>
         </div>
         <div class="campo">
           <label for="asunto">Asunto</label>
-          <input type="text" id="asunto" placeholder="Ej: Consulta sobre cursos" required />
+          <input type="text" id="asunto" placeholder="Ej: Consulta sobre cursos" />
+          <small class="error" id="error-asunto"></small>
         </div>
         <div class="campo">
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
+          <textarea id="mensaje" rows="5" placeholder="Escribe tu consulta aquí..."></textarea>
+          <small class="error" id="error-mensaje"></small>
         </div>
-        <button type="submit" class="btn-acento">Enviar mensaje</button>
+        <button type="submit" class="btn-acento" id="btn-enviar" disabled>Enviar mensaje</button>
       </form>
+      <p id="mensaje-exito" style="display:none; margin-top:10px;"></p>
     </div>
 
-    <!-- COLUMNA LATERAL -->
-    <div class="contact-lateral">
-
-      <!-- Info de contacto -->
+    <div class="lateral">
       <div class="card">
         <h2>Información de contacto</h2>
         <ul class="info-lista">
-          <li>
-            <div class="info-icono">📍</div>
-            <div>
-              <strong>Dirección</strong>
-              <span>Av. Central 450, San José Centro,<br>San José, Costa Rica</span>
-            </div>
-          </li>
-          <li>
-            <div class="info-icono">📞</div>
-            <div>
-              <strong>Teléfono</strong>
-              <span>+506 2234-5678</span>
-            </div>
-          </li>
-          <li>
-            <div class="info-icono">✉️</div>
-            <div>
-              <strong>Correo</strong>
-              <span>info@novatechacademy.cr</span>
-            </div>
-          </li>
-          <li>
-            <div class="info-icono">🕐</div>
-            <div>
-              <strong>Horario</strong>
-              <span>Lun – Vie: 8:00 am – 6:00 pm<br>Sáb: 8:00 am – 12:00 pm</span>
-            </div>
-          </li>
+          <li><strong>Dirección:</strong> Av. Central 450, San José, Costa Rica</li>
+          <li><strong>Teléfono:</strong> +506 2234-5678</li>
+          <li><strong>Correo:</strong> info@novatechacademy.cr</li>
+          <li><strong>Horario:</strong> Lun–Vie 8am–6pm | Sáb 8am–12pm</li>
         </ul>
       </div>
 
-      <!-- Mapa -->
       <div class="card">
         <h2>¿Cómo llegar?</h2>
-        <p class="card-sub">Nos encontramos en el corazón de San José.</p>
-        <div class="mapa-wrapper">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15719.0!2d-84.0900!3d9.9350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e343e0c87619%3A0x827ce72c16b8e4f!2sSan%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1ses!2scr!4v1716000000000"
-            width="100%" height="200" style="border:0;"
-            allowfullscreen="" loading="lazy"
-            title="Ubicación NovaTech Academy">
-          </iframe>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15719.0!2d-84.0900!3d9.9350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e343e0c87619%3A0x827ce72c16b8e4f!2sSan%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1ses!2scr!4v1716000000000"
+          width="100%"
+          height="220"
+          style="border:0; border-radius:6px; margin-top:10px;"
+          allowfullscreen=""
+          loading="lazy"
+          title="Ubicación NovaTech Academy">
+        </iframe>
       </div>
-
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer id="footer">
-    <div class="contenedor footer-grid">
+    <div class="footer-grid contenedor">
       <div>
         <p class="footer-nombre">NOVA<span>TECH</span></p>
-        <p class="footer-descripcion">Formando los profesionales tecnológicos del mañana con educación de calidad.</p>
+        <p class="footer-descripcion">Formando los profesionales tecnológicos del mañana.</p>
         <div class="footer-redes">
           <a href="#">Facebook</a>
           <a href="#">Instagram</a>
@@ -152,7 +117,7 @@
       </div>
     </div>
     <div class="footer-creditos">
-      © 2026 NovaTech Academy — Práctica 1, Ambiente Web Cliente Servidor, Universidad Fidélitas
+      © 2026 NovaTech Academy — Práctica 1, Ambiente Web, Universidad Fidélitas
     </div>
   </footer>
 
@@ -164,5 +129,6 @@
     });
   </script>
 
+  <script src="js/contacto.js"></script>
 </body>
 </html>
