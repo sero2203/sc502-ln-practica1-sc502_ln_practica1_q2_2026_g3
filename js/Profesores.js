@@ -1,3 +1,4 @@
+/*
 //Tarea 2 
 
 // Funcionalidad dinámica de la página de profesores
@@ -37,6 +38,7 @@ let profesores = [
         cursosQueImparte: ["Inteligencia Artificial", "Bases de Datos"]
     }
 ];
+*/
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -51,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             navLinks.style.display = "flex";
         }
     });
-
+    /*
     // Renderizar las tarjetas de profesores
     renderizarProfesores();
 
@@ -61,8 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target === modal) {
             cerrarModal();
         }
+    */
     });
 
+    /*
     // Cerrar modal al hacer clic en el botón de cerrar
     let btnCerrar = document.getElementById("modal-cerrar");
     btnCerrar.addEventListener("click", function () {
@@ -150,3 +154,4 @@ function cerrarModal() {
     let modal = document.getElementById("modal-profesor");
     modal.style.display = "none";
 }
+*/

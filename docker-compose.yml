@@ -1,0 +1,38 @@
+services:
+  web:
+    build: .
+    container_name: novatech-php-apache
+    ports:
+      - "8090:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: novatech-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: novatech_academy_db
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+    ports:
+      - "3309:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: novatech-phpmyadmin
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "8091:80"
+
+volumes:
+  db_data:
