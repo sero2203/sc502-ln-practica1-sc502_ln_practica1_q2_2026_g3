@@ -1,4 +1,4 @@
-const cursos = [
+/*const cursos = [
   {
     nombre: "Data Science con Python",
     descripcion:
@@ -96,4 +96,4 @@ function renderizarCursos() {
  
 // --- 4. EJECUTAR cuando el DOM esté listo ---
  
-document.addEventListener("DOMContentLoaded", renderizarCursos);
+document.addEventListener("DOMContentLoaded", renderizarCursos);*/
