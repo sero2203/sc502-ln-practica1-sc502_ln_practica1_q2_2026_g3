@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+/*document.addEventListener("DOMContentLoaded", function () {
   const form        = document.getElementById("form-contacto");
   const inputNombre = document.getElementById("nombre");
   const inputCorreo = document.getElementById("correo");
@@ -155,4 +156,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   actualizarEstadoBoton();
-});
+});*/

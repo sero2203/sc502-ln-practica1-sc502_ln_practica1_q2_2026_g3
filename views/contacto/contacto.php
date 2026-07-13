@@ -11,13 +11,13 @@
 
   <nav id="navbar">
     <div id="nav-contenido" class="contenedor">
-      <a href="index.html" id="nav-logo">NOVA<span>TECH</span></a>
+      <a href="index.php" id="nav-logo">NOVA<span>TECH</span></a>
       <button id="nav-toggle">☰</button>
       <ul id="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="profesores.html">Profesores</a></li>
-        <li><a href="contacto.html" class="activo">Contacto</a></li>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="index.php?controller=cursos&action=index">Cursos</a></li>
+        <li><a href="index.php?controller=profesores&action=index">Profesores</a></li>
+        <li><a href="index.php?controller=contacto&action=index" class="activo">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -30,35 +30,44 @@
   <div class="contact-layout">
     <div class="card">
       <h2>Envíanos un mensaje</h2>
-      <form id="form-contacto">
+      <form id="form-contacto"
+            method="POST"
+            action="index.php?controller=contacto&action=store">
         <div class="campo">
           <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" placeholder="Ej: María González" />
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: María González" />
           <small class="error" id="error-nombre"></small>
         </div>
         <div class="campo">
           <label for="correo">Correo electrónico</label>
-          <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" />
+          <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" />
           <small class="error" id="error-correo"></small>
         </div>
         <div class="campo">
           <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" placeholder="Ej: 8888-1234" />
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: 8888-1234" />
           <small class="error" id="error-telefono"></small>
         </div>
         <div class="campo">
           <label for="asunto">Asunto</label>
-          <input type="text" id="asunto" placeholder="Ej: Consulta sobre cursos" />
+          <input type="text" id="asunto" name="asunto" placeholder="Ej: Consulta sobre cursos" />
           <small class="error" id="error-asunto"></small>
         </div>
         <div class="campo">
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" rows="5" placeholder="Escribe tu consulta aquí..."></textarea>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta aquí..."></textarea>
           <small class="error" id="error-mensaje"></small>
         </div>
-        <button type="submit" class="btn-acento" id="btn-enviar" disabled>Enviar mensaje</button>
+        <button type="submit" class="btn-acento" id="btn-enviar">Enviar mensaje</button>
       </form>
-      <p id="mensaje-exito" style="display:none; margin-top:10px;"></p>
+
+      <?php if (!empty($mensajeExito)): ?>
+        <p id="mensaje-exito" style="margin-top:10px;"><?php echo $mensajeExito; ?></p>
+      <?php endif; ?>
+
+      <?php if (!empty($mensajeError)): ?>
+        <p style="color:red; margin-top:10px;"><?php echo $mensajeError; ?></p>
+      <?php endif; ?>
     </div>
 
     <div class="lateral">
@@ -101,10 +110,10 @@
       <div>
         <p class="footer-nav-titulo">Páginas</p>
         <ul class="footer-nav-lista">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="cursos.html">Cursos</a></li>
-          <li><a href="profesores.html">Profesores</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.php">Inicio</a></li>
+          <li><a href="index.php?controller=cursos&action=index">Cursos</a></li>
+          <li><a href="index.php?controller=profesores&action=index">Profesores</a></li>
+          <li><a href="index.php?controller=contacto&action=index">Contacto</a></li>
         </ul>
       </div>
       <div>
@@ -129,8 +138,7 @@
     });
   </script>
 
- /<!--
-<script src="js/contacto.js"></script>
--->
+  <!-- JS de Tarea 2 se deja comentado si ya no aplica -->
+  <!-- <script src="js/contacto.js"></script> -->
 </body>
 </html>
