@@ -48,3 +48,22 @@ INSERT INTO cursos_destacados (nombre, descripcion, imagen, categoria, precio, d
   ('Inteligencia Artificial Aplicada', 'Domina redes neuronales, procesamiento de lenguaje natural y visión por computadora con TensorFlow y PyTorch.', './images/cursos/inteligencia-artificial.jpg', 'Inteligencia Artificial', 210000.00, 1),
   ('Desarrollo Full Stack', 'Construye aplicaciones web completas con HTML, CSS, JavaScript, Node.js y bases de datos relacionales y NoSQL.', './images/cursos/full-stack.jpg', 'Desarrollo Web', 195000.00, 1),
   ('Ciberseguridad Ofensiva y Defensiva', 'Comprende las principales amenazas digitales y aprende a proteger sistemas, redes y aplicaciones ante ataques reales.', './images/cursos/ciberseguridad.jpg', 'Ciberseguridad', 200000.00, 1);
+
+
+  --  Tabla: cursos (Estudiante 2 - Tu código)
+
+CREATE TABLE IF NOT EXISTS cursos (
+  id           INT           NOT NULL AUTO_INCREMENT,
+  nombre       VARCHAR(100)  NOT NULL,
+  descripcion  TEXT          NOT NULL,
+  precio       DECIMAL(10,2) NOT NULL,
+  categoria    VARCHAR(50)   NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO cursos (nombre, descripcion, precio, categoria) VALUES
+  ('Curso de PHP Básico', 'Aprende los fundamentos de PHP y desarrollo web.', 50.00, 'Programación'),
+  ('Diseño Web con Bootstrap', 'Crea sitios web responsivos y modernos.', 40.00, 'Diseño'),
+  ('JavaScript Avanzado', 'Domina JS moderno, promesas y asincronía.', 60.00, 'Programación'),
+  ('Bases de Datos MySQL', 'Diseño, consultas complejas y optimización.', 55.00, 'Bases de Datos'),
+  ('Marketing Digital', 'Estrategias de marketing para impulsar la web.', 45.00, 'Negocios');
